@@ -17,8 +17,6 @@ $(document).ready(function() {
             url: "https://wind-bow.gomix.me/twitch-api/streams/" + site,
             dataType: 'jsonp',
             success: function(data) {
-
-
               if (data.stream == null) {
                 $("#" + site).append("<h5> Not Currently Streaming </h5>");
               } else {
@@ -30,10 +28,6 @@ $(document).ready(function() {
           });
         }
       });
-
-
-
-
 
     }
   }
