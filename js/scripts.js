@@ -20,7 +20,7 @@ $(document).ready(function() {
               if (data.stream == null) {
                 $("#" + site).append("<h5> Not Currently Streaming </h5>");
               } else {
-                console.log(data);
+          
 
                 $("#" + site).append("<a href='https://www.twitch.tv/" + site + "'><h5> Now streaming " + data.stream.game + "</h5></a></div></div>");
               }
